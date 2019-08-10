@@ -1,0 +1,71 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+<div class="row">
+    <div class="col-md-3">
+        <img src="~/images/image0.jpg" alt="ASP.NET" style="margin-top:100px; padding-right:150px"/>
+    </div>
+    <div class="col-md-3">
+        <h2 style="margin-top:100px; margin-left:20px">Course Projects</h2>
+        <ul style="margin-left:20px">
+            <li>
+                <p>INFO 3307 - Systems Analysis and Design</p>
+                <a asp-page="/Projects/Course/SystemsDesign">Project Requirements and Submission</a>
+                <p></p>
+            </li>
+            <li>
+                <p>INFO 3380 - Networking and Virtualization</p>
+                <a asp-page="/Projects/Course/Networking">Project Requirements and Submission</a>
+                <p></p>
+            </li>
+            <li>
+                <p>INFO 4407 - Database Design and Implementation</p>
+                <a asp-page="/Projects/Course/DatabaseDesign">Project Requirements and Submission</a>
+                <p></p>
+            </li>
+            <li>
+                <p>INFO 4482 - Systems Development and Implementations Methodologies</p>
+                <a asp-page="/Projects/Course/SystemsImplementation">Project Requirements and Submission</a>
+            </li>
+        </ul>
+    </div>
+    <div class="col-md-3">
+        <h2 style="margin-top:100px">Personal Projects</h2>
+        <ul>
+            <li>
+                <p>Android Applications</p>
+                <a target="_blank" rel="noopener noreferrer" href="https://play.google.com/store/apps/details?id=com.chas.calcalc&hl=en_US">CalCalc - Nutrition Calculator</a>
+                <img src="~/images/calcalcicon.jpg" alt="ASP.NET" class="img-responsive" />
+                <p></p>
+            </li>
+            <li>
+                <p>This website!</p>
+            </li>
+        </ul>
+    </div>
+    <div class="col-md-3">
+        <h2 style="margin-top:100px">Miscellaneous Info</h2>
+        <ul>
+            <li>
+                <a asp-page="/Resume">Resume</a>
+                <p></p>
+            </li>
+            <li>
+                <a href="#" onclick="alert('Email Address:\n \ndavicha4@isu.edu');">Contact Information</a>
+                <p></p>
+            </li>
+            <li>
+                <a href="http://coursecat.isu.edu/undergraduate/business/informatics/bba_business_informatics/" target="_blank">Informatics Degree Requirements</a>
+                <p></p>
+            </li>
+            <li>
+                <a href="https://en.wikipedia.org/wiki/Informatics" target="_blank">What is Informatics? (Wiki)</a>
+                <p></p>
+            </li>
+        </ul>
+    </div>
+</div>

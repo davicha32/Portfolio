@@ -1,0 +1,32 @@
+﻿@page
+@model SystemsDesignModel
+@{
+    ViewData["Title"] = "3307 - Systems Analysis and Design";
+}
+
+<script src="~/js/site.js"></script>
+
+<div class="row">
+    <h1>INFO 3307 - Systems Analysis and Design</h1>
+    <div class="col-md-3">
+        <h2 style="margin-top:100px;">Project</h2>
+        <ul>
+            <li>
+                <a onclick="SystemsDesignCurrent();" href="#">Project Requirements - Current</a>
+                <p></p>
+            </li>
+            <li>
+                <a onclick="SystemsDesignFuture();" href="#">Project Requirements - Future</a>
+                <p></p>
+            </li>
+            <li>
+                <a onclick="SystemsDesignSubmission();" href="#">Project Submission</a>
+                <p>Full site available at: <a href="http://3307.davicha.com">3307.davicha.com</a></p>
+            </li>
+        </ul>
+    </div>
+    <div id="designDiv" class="col-md-3">
+        <h2 style="margin-top:100px">Project Requirements - Current</h2>
+        <iframe src="https://drive.google.com/file/d/1Ty2hBjOGioLbFIJEbYOc2fI2H9MDbere/preview" width="640" height="800"></iframe>
+    </div>
+</div>

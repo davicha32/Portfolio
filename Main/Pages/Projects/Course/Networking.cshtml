@@ -1,0 +1,31 @@
+﻿@page
+@model NetworkingModel
+@{
+    ViewData["Title"] = "3380 - Networking and Virtualizaion";
+}
+
+<script src="~/js/site.js"></script>
+
+<div class="row">
+    <h1>INFO 3380 - Networking and Virtualizaion</h1>
+    <div class="col-md-3">
+        <h2 style="margin-top:100px;">Project</h2>
+        <ul>
+            <li>
+                <a onclick="networkingRequirements();" href="#">Project Requirements</a>
+                <p></p>
+            </li>
+            <li>
+                <a onclick="networkingDocumentation();" href="#">Project Submission Documentation</a>
+                <p></p>
+            </li>
+            <li>
+                <a onclick="networkingVideo();" href="#">Project Submission Video</a>
+            </li>
+        </ul>
+    </div>
+    <div id="networkingDiv" class="col-md-3">
+        <h2 id="networkingTitle" style="margin-top:100px">Project Requirements</h2>
+        <iframe src="https://drive.google.com/file/d/15uUEzdMKJ95ikIkIfIGFSUX7WoOoq8hu/preview" width="640" height="800"></iframe>
+    </div>
+</div>

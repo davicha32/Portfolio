@@ -1,0 +1,35 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "School Projects";
+}
+
+<div class="row">
+    <div class="col-md-3">
+        <h2 style="margin-top:100px; margin-left:20px">Course Projects</h2>
+        <ul style="margin-left:20px">
+            <li>
+                <p>INFO 3307 - Systems Analysis and Design</p>
+                <a asp-page="/Projects/Course/SystemsDesign">Project Requirements and Submission</a>
+                <p></p>
+            </li>
+            <li>
+                <p>INFO 3380 - Networking and Virtualization</p>
+                <a asp-page="/Projects/Course/Networking">Project Requirements and Submission</a>
+                <p></p>
+            </li>
+            <li>
+                <p>INFO 4407 - Database Design and Implementation</p>
+                <a asp-page="/Projects/Course/DatabaseDesign">Project Requirements and Submission</a>
+                <p></p>
+            </li>
+            <li>
+                <p>INFO 4482 - Systems Development and Implementations Methodologies</p>
+                <a asp-page="/Projects/Course/SystemsImplementation">Project Requirements and Submission</a>
+            </li>
+        </ul>
+    </div>
+    <div class="col-md-3">
+        <img src="~/images/isu.png" alt="ASP.NET" style="margin-top:100px; margin-left:100px" class="img-responsive" />
+    </div>
+</div>
