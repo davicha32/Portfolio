@@ -35,3 +35,10 @@ body {
         display: none;
     }
 }
+
+#amsImage {
+    border: solid 2px;
+    border-color: orange;
+    height: 600px;
+    width: 1000px;
+}
