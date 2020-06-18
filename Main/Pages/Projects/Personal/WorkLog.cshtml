@@ -1,0 +1,118 @@
+﻿@page
+@model Main.Pages.Projects.Personal.WorkLogModel
+@{
+    ViewData["Title"] = "WorkLog";
+}
+
+<!DOCTYPE html>
+<link rel="stylesheet" type="text/css" href="~/css/site.css">
+<script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>WorkLog</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <h1>WorkLog</h1>
+
+    <div class="parentDiv">
+
+        <div class="left">
+            <h2 style="margin-top:100px;">Project</h2>
+            <p>
+                WorkLog is a web application I created for an employer. The main requirement for the system was to create an easy
+                way for employees to clock in and out for the day.
+            </p>
+            <p>The minimum system requirements were:</p>
+            <ul>
+                <li>
+                    Employees clock in and out using a password to ensure integrity.
+                </li>
+                <li>
+                    Ability for admins to create, read, update, and delete employees.
+                </li>
+                <li>
+                    Ability for admins to edit period hours to account for mistakes.
+                </li>
+                <li>
+                    Create a history log when an employee clocks in/out for auditability.
+                </li>
+                <li>
+                    Leave open-ended to allow functionality under new contracts and work locations.
+                </li>
+            </ul>
+
+            <button type="button" class="collapsible">For a fully viable product, major requirements needed to be addressed, including:</button>
+            <div class="content">
+                <ol>
+                    <li>
+                        Device agnosticism. The product needs to work for everyone regardless of how the system was created.
+                    </li>
+                    <li>
+                        Remove possible dishonesty. Clocking in and out should not be possible unless the employee is at work.
+                    </li>
+                    <li>
+                        System integrity. The system needs to function correctly and automatically even if I leave the job.
+                    </li>
+                </ol>
+            </div>
+
+            <button type="button" class="collapsible">These requirements were addressed in the following ways:</button>
+            <div class="content">
+                <ol>
+                    <li>
+                        At first, I began to create the system for an Android tablet. That created certain problems such as the possibility
+                        of the tablet being stolen. I also did not have a reliable way to keep the tablet charged. This lead to the idea of making the
+                        system as a web application. This ended up being a great benefit because it allowed me to give everyone access to the system
+                        on their own devices, regardless of device type.
+                    </li>
+                    <li>
+                        We had problems with employees being dishonest about when they would arrive and leave work. In response to this, I built
+                        the system to only be accessible from specifically allowed IP addresses. This made it so employees can only clock in and out while connected
+                        to specific WiFi networks.
+                    </li>
+                    <li>
+                        I needed the system to be as hands off as possible. Including the ability for it to function without my administration. To do this,
+                        I built the system to automatically track and total the employee's hours worked. At the end of the pay period it sends a text message (via Twilio)
+                        containing each employee's hours to the owner of the company.
+                    </li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="images">
+            <button type="button" class="collapsible">Index Page</button>
+            <div class="content">
+                <img class="inner-images" src="~/images/Index1.png" />
+            </div>
+            <button type="button" class="collapsible">Clock In Page</button>
+            <div class="content">
+                <img class="inner-images" src="~/images/ClockIn1.png" />
+            </div>
+            <button type="button" class="collapsible">Admin Control Panel</button>
+            <div class="content">
+                <img class="inner-images" src="~/images/ControlPanel1.png" />
+            </div>
+            <button type="button" class="collapsible">View / Edit Hours List</button>
+            <div class="content">
+                <img class="inner-images" src="~/images/HoursList1.png" />
+            </div>
+            <button type="button" class="collapsible">Clock In / Out History</button>
+            <div class="content">
+                <img class="inner-images" src="~/images/History1.png" />
+            </div>
+            <button type="button" class="collapsible">Add Employee Page</button>
+            <div class="content">
+                <img class="inner-images" src="~/images/AddEmployee1.png" />
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

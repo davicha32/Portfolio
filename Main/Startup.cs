@@ -31,8 +31,8 @@ namespace Main
             //    options.MinimumSameSitePolicy = SameSiteMode.None;
             //});
 
-
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+            //services.Add(new ServiceDescriptor(typeof(EmployeeStoreContext), new EmployeeStoreContext(Configuration.GetConnectionString("DefaultConnection"))));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
